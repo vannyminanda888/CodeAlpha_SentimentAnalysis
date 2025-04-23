@@ -60,18 +60,18 @@ We compared three text vectorization methods:
 
 * TF-IDF
 * GloVe (50d vectors)
-* BERT embeddings
+* Bag of Words embeddings
 
 # 🧪 Experimental Insights
 ## GloVe50 Vectorization
 Aggressive preprocessing (removing stop words, punctuation, etc.) did not improve the model.
 In fact, retaining some punctuation and stop words gave better performance.
-(See notebook: glove_experiment.ipynb for details.)
+(See notebook: logistic regression with GloVe50.ipynb for details.)
 
-## BERT Embeddings
+## Bag of Words Embeddings
 Used to capture contextual meaning of tweets.
 Required heavier computational resources.
-(See notebook: bert_experiment.ipynb)
+(See notebook: logistic regression with BagOfWord.ipynb)
 
 ## TF-IDF (Best Performing)
 Achieved the highest accuracy across multiple classifiers.
@@ -80,7 +80,7 @@ Likely performed best because:
 Tweets are short and sparse.
 TF-IDF emphasizes unique, informative terms.
 Simpler models benefited from interpretable features.
-(See notebook: tfidf_model.ipynb)
+(See notebook: logistic regression with tf idf.ipynb)
 
 ## ✅ Conclusion
 The TF-IDF approach outperformed (**81% accuracy**) both GloVe and BERT in this project. It’s well-suited for short text like tweets, and provides a strong baseline for sentiment classification with minimal computational cost.
