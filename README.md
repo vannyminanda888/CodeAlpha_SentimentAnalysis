@@ -13,11 +13,9 @@ Fields:
 * tweet — tweet content
 
 ## 🔁 Label Mapping
-For binary classification:
-
-Label 0 → Negative
-
-Label 4 → Mapped to 1 (Positive)
+*For binary classification:*
+*Label 0 → Negative
+*Label 4 → Mapped to 1 (Positive)
 
 ## 🔧 Data Preprocessing
 **The preprocessing pipeline includes:**
