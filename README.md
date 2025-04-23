@@ -5,18 +5,12 @@
 Source: Sentiment140
 
 Fields:
-
-label — original sentiment label (0 = negative, 4 = positive)
-
-id — tweet ID
-
-timestamp — time of tweet
-
-no_query — unused query value
-
-username — Twitter handle
-
-tweet — tweet content
+* label — original sentiment label (0 = negative, 4 = positive)
+* id — tweet ID
+* timestamp — time of tweet
+* no_query — unused query value
+* username — Twitter user name
+* tweet — tweet content
 
 ## 🔁 Label Mapping
 For binary classification:
@@ -26,25 +20,16 @@ Label 0 → Negative
 Label 4 → Mapped to 1 (Positive)
 
 ## 🔧 Data Preprocessing
-The preprocessing pipeline includes:
-
-Mapping labels: 0 → 0 (negative), 4 → 1 (positive)
-
-Cleaning tweet text by:
-
-Removing URLs
-
-Removing user mentions (@username)
-
-Removing hashtags (#example)
-
-Removing special characters and punctuation
-
-Converting text to lowercase
-
-Removing stop words
-
-Removing numeric values
+**The preprocessing pipeline includes:**
+1. Mapping labels: 0 → 0 (negative), 4 → 1 (positive)
+2. Cleaning tweet text by:
+* Removing URLs
+* Removing user mentions (@username)
+* Removing hashtags (#example)
+* Removing special characters and punctuation
+* Converting text to lowercase
+* Removing stop words
+* Removing numeric values
 
 ## 🛠 Text Transformation
 ### 1. Tokenization
