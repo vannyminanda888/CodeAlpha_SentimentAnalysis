@@ -83,4 +83,4 @@ Simpler models benefited from interpretable features.
 (See notebook: tfidf_model.ipynb)
 
 ## ✅ Conclusion
-The TF-IDF approach outperformed both GloVe and BERT in this project. It’s well-suited for short text like tweets, and provides a strong baseline for sentiment classification with minimal computational cost.
+The TF-IDF approach outperformed (**81% accuracy**) both GloVe and BERT in this project. It’s well-suited for short text like tweets, and provides a strong baseline for sentiment classification with minimal computational cost.
